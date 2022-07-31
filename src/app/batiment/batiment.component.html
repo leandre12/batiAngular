@@ -1,0 +1,25 @@
+<div class="container">
+    <div class="card">
+        <div class="card-header">Liste des batiments</div>
+
+        <div class="card-body">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>ID</th> <th>Nom</th> <th>Adresse</th> <th>Etage</th><th>ClasseEnergie</th><th>Responsable</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let bat of batiment">
+                        <td>{{bat.id}}</td>
+                        <td>{{bat.nomImmeuble}}</td>
+                        <td>{{bat.adresse}}</td>
+                        <td>{{bat.nbEtage}}</td>                                                
+                        <td>{{bat.classeEnergie}}</td>                                                
+                        <td>{{bat.responsable.nom}}</td>                                                
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
